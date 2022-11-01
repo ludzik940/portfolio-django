@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href={% static 'style.css' %}>
+
+    <link rel="icon" type="image/x-icon" href={% static "/img/icons/coding.png"%}>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/developer" title="developer icons">Developer icons created by Freepik - Flaticon</a> -->
+
+    <!-- FOTNAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOVER CSS -->
+    <link href= {% static 'hover-min.css' %} rel="stylesheet">
+
+    <!-- APP JS -->
+    <script src={% static 'app.js' %}></script>
+
+   
+          
+
+    <title>Dominik Jurczak | FullStack Developer</title>
+</head>
+<body>
+    
+<div class="modal--container">
+    <div class="modal--cv modal--content">
+        <i class="fa-solid fa-xmark modal--close"></i>
+        <div class="choose--resume">
+            <h2 class="content--title">Please select <span>resume</span></h2>
+            <div class="resume--grid grid">
+                <div class="resume--pl flex resume--box">
+                    <img src={% static 'img/icons/poland64.png' %} alt="poland flag" class="flag--pl" >
+
+                    <!-- <a href="https://www.flaticon.com/free-icons/flags" title="flags icons">Flags icons created by Freepik - Flaticon</a> -->
+
+                    <img src={% static 'img//CV/CV_img.webp' %} alt="cv-pl" width="350px">
+                    <button class="btn btn--download__pl">
+                        <a href={% static 'img/CV/CV PL.pdf' %} download>Download CV</a>
+                    </button>
+
+                </div>
+                <div class="resume--eng flex resume--box">
+                    <img src={% static 'img/icons/united-kingdom.png' %} alt="poland flag" class="flag--eng">
+                    <!-- <a href="https://www.flaticon.com/free-icons/united-kingdom" title="united kingdom icons">United kingdom icons created by Freepik - Flaticon</a> -->
+                    <img src={% static 'img//CV/CV_img.webp' %} alt="cv-eng" width="350px">
+                    <button class="btn btn--download__eng">
+                        <a href={% static 'img/CV/CV ENG.pdf' %} download>Download CV</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ! MOBILE DISPLAY -->
+<div class="mobile--display mobile--show">
+    <div class="menu menu--mobile">
+        <div class="menu--introduction">
+            <h3>Hi! I am</h3>
+            <h2>Dominik Jurczak</h2>
+            <p>Selftaught webdeveloper who loves what he does.</p>
+        </div>
+
+        <div class="mobile--img">
+            <div class="mobile--img__border">
+
+            </div>
+        </div>
+        <div class="menu--btns">
+            <button class="btn btn--hire">
+                <a href="https://www.linkedin.com/in/jurczakdominik/">Hire me</a>
+            </button>
+            <button class="btn btn--github">
+                <a href="https://github.com/ludzik940">My Github</a>
+            </button>
+        </div>
+
+        <div class="mobile--social flex">
+            <div class="social--box">
+                <a href="https://www.instagram.com/dominikcode/">
+                    <img src={% static "img/icons/instagram.png" %} alt="">
+                </a>
+            </div>
+            <div class="social--box">
+                <a href="https://www.linkedin.com/in/jurczakdominik/">
+                    <img src={% static "img/icons/linkedin.png" %} alt="">
+                </a>
+            </div>
+        </div>
+        
+
+        <!-- ICONS
+        <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+    
+    -->
+    </div>
+</div>
+
+
+
+
+<main class="grid main--content">
+    <div class="menu">
+        <div class="menu--introduction">
+            <h3>Hi! I am </h3>
+            <h2>Dominik Jurczak</h2>
+            <p>Selftaught webdeveloper who loves what he does.</p>
+        </div>
+        <div class="menu--btns">
+            <button class="btn btn--hire">
+                <a href="https://www.linkedin.com/in/jurczakdominik/">Hire me</a>
+            </button>
+            <button class="btn btn--github">
+                <a href="https://github.com/ludzik940">My Github</a>
+            </button>
+        </div>
+
+        <div class="menu--content mobile--hidden">
+            <div class="menu--item">
+                <h2 
+                    class="active hvr-underline-from-left menu--item__h2" id="home--content">
+                    Home
+                </h2>
+            </div>
+            <div class="menu--item">
+                <h2 
+                    class="hvr-underline-from-left menu--item__h2" id="about--content">
+                    About
+                </h2>
+            </div>
+            <div class="menu--item">
+                <h2 
+                    class="hvr-underline-from-left menu--item__h2" id="links--content">
+                    Links
+                </h2>
+            </div>
+            <div class="menu--item">
+                <h2 
+                    class="hvr-underline-from-left menu--item__h2" id="projects--content">
+                    Projects
+                </h2>
+            </div>
+            <div class="menu--item">
+                <h2 
+                    class="hvr-underline-from-left menu--item__h2" id="contact--content">
+                    Contact
+                </h2>
+            </div>
+        </div>
+
+        <div class="menu--download mobile--hidden">
+            <button class="btn btn--download">
+                <a>Download CV</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content--box home--content active">
+            <div class="home--container">
+             </div>
+        </div>
+
+    {% include 'about.html' %}
+
+    {% include 'projects.html' %}
+    
+    {% include 'contact.html' %}
+    
+    {% include 'links.html' %}
+    </div>
+</main>
+
+
+</body>
+</html>

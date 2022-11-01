@@ -1,0 +1,46 @@
+{% load static %}
+
+
+<div class="content--box links--content hidden">
+    <div class="links--container">
+        <h2 class="content--title">Useful <span class="colored">links</span></h2>
+
+       <ul class="filter--panel">
+            <li class="filter--panel__option hvr-underline-from-center " id='all'>
+                <h2 class='filter--option__h2 active--tab'>All</h2>
+            </li>
+            <li class="filter--panel__option hvr-underline-from-center " id='Python'>
+                <h2 class='filter--option__h2'>Python</h2>
+            </li>
+            <li class="filter--panel__option hvr-underline-from-center " id='Media'>
+                <h2 class='filter--option__h2'>Media</h2>
+            </li>
+            <li class="filter--panel__option hvr-underline-from-center " id='YouTube'>
+                <h2 class='filter--option__h2'>YouTube</h2>
+            </li>
+            <li class="filter--panel__option hvr-underline-from-center " id='Courses'>
+                <h2 class='filter--option__h2'>Courses</h2>
+            </li>
+        </ul>
+        
+        
+
+        <div class="links--flex flex">
+                {% for link in links %}
+                    {% if link.authorized %}
+                       <div class="links--flex__link {{ link.get_tag_display }}">
+                            <img src={{ link.img.url }} alt="">
+                            <h2 class='link__title'>{{ link.title }}</h2>
+                            <p class='link__short'> {{ link.desc }}</p>
+                            <div class="link__link">
+                                <button class="btn btn--link">
+                                    <a href={{ link.link_redirect }} target='_blank'>Visit</a>
+                                </button>
+                            </div>
+                        </div>   
+                    {% endif %}   
+                {% endfor %} 
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+{% load static %}
+
+<div class="content--box contact--content hidden">
+    <div class="contact--container">
+        <div class="available--dot">
+            <h2>
+                🟢 I'm available for work
+            </h2>
+        </div>
+
+        <div class="contact--box grid mobile--hidden">
+            <div class="contact--box__email">
+                <h2>Email</h2>
+                <a href="mailto:djurczak94@gmail.com">djurczak94@gmail.com</a>
+            </div>
+            <div class="contact--box__mobile">
+                <h2>Mobile</h2>
+                <a href="tel:+48518292256">+48 518 292 256</a>
+            </div>
+            <div class="contact--box__address">
+                <h2>Address</h2>
+                <p>38-300, Gorlice</p>
+            </div>
+        </div>
+        <hr class="mobile--hidden">
+
+
+        <h3 class="content--title">Let's get in touch 📩</h2>
+
+        <form 
+            action="https://formsubmit.co/djurczak94@gmail.com" method="post" 
+            class="flex contact--form">
+                <input 
+                    type="hidden" 
+                    name="_next" 
+                    value="https://dominik-jurczak.netlify.app/">
+                <input 
+                    type="hidden" 
+                    name="_subject" 
+                    value="New email from website! 👻">
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Name"
+                    required>
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email"
+                    required>
+
+                <textarea 
+                    name="message" 
+                    cols="10" 
+                    rows="10" placeholder = "Your message"
+                    value=""
+                    required></textarea>
+                <div class="contact--btn">
+                    <button class="btn btn--send">Send</button>
+                </div>
+        </form>
+    </div>
+</div>
